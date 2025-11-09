@@ -1,11 +1,73 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Library Floor Plans</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dupré Library — Floor Maps</title>
+  <style>
+    :root{--max:1100px;--gap:18px}
+    body{font-family:system-ui, Arial, sans-serif;line-height:1.5;color:#222;margin:20px;padding:0;display:flex;justify-content:center}
+    .wrap{max-width:var(--max);width:100%;padding:0 16px}
+    h1{margin:8px 0 12px;font-size:1.6rem}
+    p.lead{margin:0 0 18px;color:#333}
+    .floor{margin-bottom:28px}
+    .floor h2{margin:6px 0}
+    .map-image{display:block;max-width:100%;height:auto;border:1px solid #ddd;border-radius:4px;cursor:pointer}
+    .caption{font-size:.95rem;color:#444;margin-top:6px}
+    .note{border-left:4px solid #d0d7de;background:#f7f9fb;padding:12px 14px;color:#333;margin:18px 0;border-radius:3px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap);align-items:start}
+    footer{margin:28px 0 60px;color:#666;font-size:.95rem}
+    a.plain{color:inherit;text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>Interactive Floor Plans</h1>
-  <p>Floor plan pages will be displayed here.</p>
+  <main class="wrap">
+    <h1>Dupré Library — Floor Maps</h1>
+    <p class="lead">In addition to the book collection, Dupré Library provides service areas, computer labs, classrooms and a variety of study spaces. Click any floor map to open the full image in a new tab.</p>
+
+    <section class="grid">
+      <article class="floor">
+        <h2 id="floor1">1st Floor</h2>
+        <p class="caption"><strong>General Stacks Call Numbers:</strong> H, J, K, Z</p>
+        <a href="Dupre-1st-Floor-Map.png" target="_blank" title="Open 1st floor map in new tab">
+          <img src="Dupre-1st-Floor-Map.png" alt="Dupré Library - 1st Floor Map" class="map-image" />
+        </a>
+        <p class="caption">Key locations: Circulation, STEP Lab, Reference Desk, Jazzman's Café.</p>
+      </article>
+
+      <article class="floor">
+        <h2 id="floor2">2nd Floor</h2>
+        <p class="caption"><strong>General Stacks Call Numbers:</strong> L, M, N, P, Q, R, S, T, U, V</p>
+        <a href="Dupre-2nd-Floor-Map.png" target="_blank" title="Open 2nd floor map in new tab">
+          <img src="Dupre-2nd-Floor-Map.png" alt="Dupré Library - 2nd Floor Map" class="map-image" />
+        </a>
+        <p class="caption">Key locations: Group study rooms, STEP Lab (2nd floor), staff lounge.</p>
+      </article>
+
+      <article class="floor">
+        <h2 id="floor3">3rd Floor</h2>
+        <p class="caption"><strong>General Stacks Call Numbers:</strong> A, B, C, D, E, F, G</p>
+        <a href="Dupre-3rd-Floor-Map.png" target="_blank" title="Open 3rd floor map in new tab">
+          <img src="Dupre-3rd-Floor-Map.png" alt="Dupré Library - 3rd Floor Map" class="map-image" />
+        </a>
+        <p class="caption">Key locations: Special Collections, Louisiana Collection, Blanco Center.</p>
+      </article>
+    </section>
+
+    <div class="note">
+      <strong>Note:</strong>
+      This repository contains only my contribution (interactive floor plan pages and image uploads) to a group project developed for the UL Lafayette Dupré Library Website Redesign. All original website assets and content belong to the University of Louisiana at Lafayette.
+    </div>
+
+    <footer>
+      If you want interactive image maps (clickable regions) added here, tell me which areas should link to which URLs and I will add image map coordinates or a lightweight viewer script.
+    </footer>
+  </main>
+
+  <script>
+    // optional: log for debugging
+    console.log("Floor maps page loaded");
+    // optional: open images in lightbox could be added later
+  </script>
 </body>
 </html>
