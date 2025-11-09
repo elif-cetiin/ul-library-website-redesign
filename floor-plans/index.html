@@ -1,73 +1,69 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dupré Library — Floor Maps</title>
-  <style>
-    :root{--max:1100px;--gap:18px}
-    body{font-family:system-ui, Arial, sans-serif;line-height:1.5;color:#222;margin:20px;padding:0;display:flex;justify-content:center}
-    .wrap{max-width:var(--max);width:100%;padding:0 16px}
-    h1{margin:8px 0 12px;font-size:1.6rem}
-    p.lead{margin:0 0 18px;color:#333}
-    .floor{margin-bottom:28px}
-    .floor h2{margin:6px 0}
-    .map-image{display:block;max-width:100%;height:auto;border:1px solid #ddd;border-radius:4px;cursor:pointer}
-    .caption{font-size:.95rem;color:#444;margin-top:6px}
-    .note{border-left:4px solid #d0d7de;background:#f7f9fb;padding:12px 14px;color:#333;margin:18px 0;border-radius:3px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap);align-items:start}
-    footer{margin:28px 0 60px;color:#666;font-size:.95rem}
-    a.plain{color:inherit;text-decoration:underline}
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <h1>Dupré Library — Floor Maps</h1>
-    <p class="lead">In addition to the book collection, Dupré Library provides service areas, computer labs, classrooms and a variety of study spaces. Click any floor map to open the full image in a new tab.</p>
+  <!-- 1st floor image -->
+<img src="floor-plans/Dupre-1st-Floor-Map.png" alt="Dupré Library - 1st Floor Map"
+     id="img-floor-1" usemap="#floor-map-f1" style="max-width:100%;height:auto;">
 
-    <section class="grid">
-      <article class="floor">
-        <h2 id="floor1">1st Floor</h2>
-        <p class="caption"><strong>General Stacks Call Numbers:</strong> H, J, K, Z</p>
-        <a href="Dupre-1st-Floor-Map.png" target="_blank" title="Open 1st floor map in new tab">
-          <img src="Dupre-1st-Floor-Map.png" alt="Dupré Library - 1st Floor Map" class="map-image" />
-        </a>
-        <p class="caption">Key locations: Circulation, STEP Lab, Reference Desk, Jazzman's Café.</p>
-      </article>
+<!-- 2nd floor image -->
+<img src="floor-plans/Dupre-2nd-Floor-Map.png" alt="Dupré Library - 2nd Floor Map"
+     id="img-floor-2" usemap="#floor-map-f2" style="max-width:100%;height:auto;">
 
-      <article class="floor">
-        <h2 id="floor2">2nd Floor</h2>
-        <p class="caption"><strong>General Stacks Call Numbers:</strong> L, M, N, P, Q, R, S, T, U, V</p>
-        <a href="Dupre-2nd-Floor-Map.png" target="_blank" title="Open 2nd floor map in new tab">
-          <img src="Dupre-2nd-Floor-Map.png" alt="Dupré Library - 2nd Floor Map" class="map-image" />
-        </a>
-        <p class="caption">Key locations: Group study rooms, STEP Lab (2nd floor), staff lounge.</p>
-      </article>
+<!-- 3rd floor image -->
+<img src="floor-plans/Dupre-3rd-Floor-Map.png" alt="Dupré Library - 3rd Floor Map"
+     id="img-floor-3" usemap="#floor-map-f3" style="max-width:100%;height:auto;">
 
-      <article class="floor">
-        <h2 id="floor3">3rd Floor</h2>
-        <p class="caption"><strong>General Stacks Call Numbers:</strong> A, B, C, D, E, F, G</p>
-        <a href="Dupre-3rd-Floor-Map.png" target="_blank" title="Open 3rd floor map in new tab">
-          <img src="Dupre-3rd-Floor-Map.png" alt="Dupré Library - 3rd Floor Map" class="map-image" />
-        </a>
-        <p class="caption">Key locations: Special Collections, Louisiana Collection, Blanco Center.</p>
-      </article>
-    </section>
+<map id="floor-map-f1" name="floor-map-f1">
+  <area alt="Advance Student Research Center" coords="903,235,955,346" data-for="advanceCenter" href="https://advance.louisiana.edu/" shape="rect" target="_blank" />
+  <area alt="Board Games - Library of Things" coords="102,91,166,133" data-for="boardGames" href="https://ull.ent.sirsi.net/client/en_US/ull/search/results?qf=ITYPE%09Material+Type%0921%3ABOARDGAME%09Library+of+Things+-+Board+Game&amp;qf=LIBRARY%09Library%0921%3AULL-DUPRE%09Edith+Garland+Dupre+Library&amp;te=SD_ULL" shape="rect" target="_blank" />
+  <area alt="Bibliographic Instruction Labratory (Bib Lab)" coords="418,305,512,369" data-for="bibLab" href="/services/instructional-services/policies-procedures#SMART" shape="rect" target="_blank" />
+  <area alt="Browsing Bookshelf" coords="614,262,657,284" data-for="browsingShelf" href="/research/search-library-catalog#browse" shape="rect" target="_blank" />
+  <area alt="Interlibrary Loan (ILL, 1 of 2)" coords="748,229,793,264" data-for="ill_Area" href="/services/interlibrary-loan" shape="rect" target="_blank" />
+  <area alt="Interlibrary Loan (ILL, 2 of 2)" coords="796,210,874,248" data-for="ill_Textbox" href="/services/interlibrary-loan" shape="rect" target="_blank" />
+  <area alt="Jazzman's Cafe" coords="47,237,101,270" data-for="jazzman" href="https://ullafayette.sodexomyway.com/en-us/locations/" shape="rect" target="_blank" />
+  <area alt="Leisure Reading Collection" coords="102,133,166,235" data-for="leisureCollection" href="https://louisiana.libguides.com/leisurereadingcollection/collection" shape="rect" target="_blank" />
+  <area alt="Research and Access Services (Back Desk)" coords="29,282,97,315" data-for="circBack" href="/services/reference-research-services" shape="rect" target="_blank" />
+  <area alt="Circulation Services provided by Research and Access Services" coords="721,321,775,359" data-for="circulation" href="/services/circulation-services" shape="rect" target="_blank" />
+  <area alt="Reference Services provided by Research and Access Services" coords="776,321,830,359" data-for="reference" href="/services/reference-research-services" shape="rect" target="_blank" />
+  <area alt="Library of Things" coords="714,360,830,399" data-for="libraryOfThings" href="https://louisiana.libguides.com/DupreLoT" shape="rect" target="_blank" />
+  <area alt="STEP lab (1st floor)" coords="657,418,762,519" data-for="stepLab" href="/about-us/technology-library/step-lab" shape="rect" target="_blank" />
+  <area alt="Stacks, H to HF" coords="433,405,534,440" data-for="stacks_hTohf" href="https://www.loc.gov/aba/cataloging/classification/lcco/lcco_h.pdf" shape="rect" target="_blank" />
+  <area alt="Stacks, HF to HX" coords="273,405,371,439" data-for="stacks_hfTohx" href="https://www.loc.gov/aba/cataloging/classification/lcco/lcco_h.pdf" shape="rect" target="_blank" />
+  <area alt="Stacks, HX to K" coords="178,359,245,393" data-for="stacks_hxTok" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Stacks, Z" coords="116,54,151,87" data-for="stacks_z" href="https://www.loc.gov/aba/cataloging/classification/lcco/lcco_z.pdf" shape="rect" target="_blank" />
+  <area alt="Study carrels (1 of 2)" coords="378,378,408,417" data-for="studyCarrels1" href="/services/circulation-services/policies-procedures/study-spaces#individual" shape="rect" target="_blank" />
+  <area alt="Study carrels (2 of 2)" coords="378,428,408,516" data-for="studyCarrels2" href="/services/circulation-services/policies-procedures/study-spaces#individual" shape="rect" target="_blank" />
+  <area alt="United States government documents" coords="522,166,599,259" data-for="govDocs" href="/collections/us-government-information" shape="rect" target="_blank" />
+  <area alt="Writing Lab" coords="812,137,863,180" data-for="writingLab" href="https://english.louisiana.edu/writinglab" shape="rect" target="_blank" />
+</map>
 
-    <div class="note">
-      <strong>Note:</strong>
-      This repository contains only my contribution (interactive floor plan pages and image uploads) to a group project developed for the UL Lafayette Dupré Library Website Redesign. All original website assets and content belong to the University of Louisiana at Lafayette.
-    </div>
+<map id="floor-map-f2" name="floor-map-f2">
+  <area alt="Study carrels (1 of 2)" coords="459,31,765,52" data-for="studyCarrels1" href="/services/circulation-services/policies-procedures/study-spaces#individual" shape="rect" target="_blank" />
+  <area alt="Study carrels (2 of 2)" coords="392,306,422,516" data-for="studyCarrels2" href="/services/circulation-services/policies-procedures/study-spaces#individual" shape="rect" target="_blank" />
+  <area alt="Group study rooms" coords="871,359,905,544" data-for="studyRooms" href="/services/circulation-services/policies-procedures/study-spaces#group" shape="rect" target="_blank" />
+  <area alt="Search library catalog (1 of 2)" coords="700,343,716,360" data-for="opac_1" href="https://ull.ent.sirsi.net/client/en_US/ull" shape="rect" target="_blank" />
+  <area alt="Search library catalog (2 of 2)" coords="333,294,348,310" data-for="opac_2" href="https://ull.ent.sirsi.net/client/en_US/ull" shape="rect" target="_blank" />
+  <area alt="Stacks, L to N" coords="723,427,790,457" data-for="stacks_l_to_n" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Stacks, N to QD (1 of 2)" coords="460,427,544,457" data-for="stacks_n_to_qd_1" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Stacks, P to PZ (1 of 4)" coords="581,172,670,202" data-for="stacks_p_to_pz_1" href="https://www.loc.gov/aba/cataloging/classification/lcco/lcco_p.pdf" shape="rect" target="_blank" />
+  <area alt="Stacks, S to TA" coords="318,189,390,219" data-for="stacks_s_to_ta" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Stacks, TA to VM" coords="178,189,267,219" data-for="stacks_ta_to_vm" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Stacks, QD to RT (1 of 4)" coords="229,427,321,457" data-for="stacks_qd_to_rt_1" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="STEP lab (2nd floor)" coords="737,297,797,360" data-for="stepLab" href="/about-us/technology-library/step-lab" shape="rect" target="_blank" />
+</map>
 
-    <footer>
-      If you want interactive image maps (clickable regions) added here, tell me which areas should link to which URLs and I will add image map coordinates or a lightweight viewer script.
-    </footer>
-  </main>
-
-  <script>
-    // optional: log for debugging
-    console.log("Floor maps page loaded");
-    // optional: open images in lightbox could be added later
-  </script>
-</body>
-</html>
+<map id="floor-map-f3" name="floor-map-f3">
+  <area alt="Blanco Public Policy Center" coords="101,31,276,280" data-for="blancoCenter" href="https://blancocenter.louisiana.edu/" shape="rect" target="_blank" />
+  <area alt="Cajun and Creole Music Collection (CCMC, 1 of 2)" coords="85,293,206,331" data-for="ccmc_1" href="/collections/ccmc" shape="rect" target="_blank" />
+  <area alt="Cajun and Creole Music Collection (CCMC, 2 of 2)" coords="25,341,106,398" data-for="ccmc_2" href="/collections/ccmc" shape="rect" target="_blank" />
+  <area alt="Center for Louisiana Studies" coords="820,33,908,205" data-for="laStudies" href="https://louisianastudies.louisiana.edu/" shape="rect" target="_blank" />
+  <area alt="Ernest J. Gaines Center" coords="107,341,173,454" data-for="gainesCenter" href="https://louisiana.edu/ernestgaines" shape="rect" target="_blank" />
+  <area alt="Network Services (1 of 2)" coords="781,346,908,507" data-for="networkServices_1" href="https://it.louisiana.edu/departments/informationmedia-networks" shape="rect" target="_blank" />
+  <area alt="Network Services (2 of 2)" coords="859,507,908,566" data-for="networkServices_2" href="https://it.louisiana.edu/departments/informationmedia-networks" shape="rect" target="_blank" />
+  <area alt="Search library catalog" coords="702,356,719,374" data-for="opac_1" href="https://ull.ent.sirsi.net/client/en_US/ull" shape="rect" target="_blank" />
+  <area alt="Special Collections (1 of 4)" coords="634,73,765,120" data-for="specialCollections_1" href="/collections" shape="rect" target="_blank" />
+  <area alt="Special Collections (2 of 4) - Archives" coords="634,120,765,147" data-for="specialCollections_2" href="/collections/university-archives-acadiana-manuscripts" shape="rect" target="_blank" />
+  <area alt="Special Collections (3 of 4) - Louisiana Collection" coords="634,147,765,174" data-for="specialCollections_3" href="/collections/louisiana-collection" shape="rect" target="_blank" />
+  <area alt="Special Collections (4 of 4) - Jefferson Caffery Reading Room" coords="634,174,781,209" data-for="specialCollections_3" href="/collections/louisiana-collection#jcrr" shape="rect" target="_blank" />
+  <area alt="Stacks, A to D (1 of 2)" coords="738,488,669,459" data-for="stacks_a_to_d_1" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Stacks, D to GV (1 of 2)" coords="522,498,440,462" data-for="stacks_d_to_gv_1" href="https://www.loc.gov/catdir/cpso/lcco/" shape="rect" target="_blank" />
+  <area alt="Student-Athlete Academic Center (1 of 2)" coords="174,341,390,512" data-for="athleteCenter_1" href="https://studentathlete.louisiana.edu/" shape="rect" target="_blank" />
+  <area alt="Student-Athlete Academic Center (2 of 2)" coords="247,512,390,564" data-for="athleteCenter_2" href="https://studentathlete.louisiana.edu/" shape="rect" target="_blank" />
+</map>
