@@ -1,5 +1,7 @@
 # ul-library-website-redesign
 UL Lafayette Dupré Library Website Redesign project created interactive floor plan pages, improved UI/UX and optimized navigation accessibility.
-> **Note:**  
-> This repository contains only my contribution (interactive floor plan pages and image uploads) to a group project developed for the UL Lafayette Dupré Library Website Redesign.  
+
+> **Note:**
+> This repository contains only my contribution (interactive floor plan pages and image uploads) to a group project developed for the UL Lafayette Dupré Library Website Redesign.
+>
 > All original website assets and content belong to the University of Louisiana at Lafayette.
